@@ -10,7 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'docker build -t santhoshvemaplii/microshop-orders -f docker/micro-shop-orders.Dockerfile .'
-        echo "docker image build successfull"
+        echo "docker image build successfull."
       }
     }
     stage('Login') {
